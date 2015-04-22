@@ -21,7 +21,7 @@ using System.Windows.Forms;
 using System.ComponentModel;
 using System.Drawing.Imaging;
 using Microsoft.Win32;
-using Crownwood.Magic.Win32;
+//using Crownwood.Magic.Win32;
 using Crownwood.Magic.Menus;
 using Crownwood.Magic.Common;
 using Crownwood.Magic.Collections;

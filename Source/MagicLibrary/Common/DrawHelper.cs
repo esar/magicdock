@@ -14,7 +14,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
-using Crownwood.Magic.Win32;
+//using Crownwood.Magic.Win32;
 
 namespace Crownwood.Magic.Common
 {
@@ -343,6 +343,10 @@ namespace Crownwood.Magic.Common
 
         public static void DrawDragRectangles(Rectangle[] newRects, int indent)
         {
+			foreach(Rectangle r in newRects)
+				ControlPaint.DrawReversibleFrame(r, Color.Gray, FrameStyle.Thick);
+			
+			/*
             if (newRects.Length > 0)
             {
                 // Create the first region
@@ -396,10 +400,14 @@ namespace Crownwood.Magic.Common
                 // Must remember to release the HDC resource!
                 User32.ReleaseDC(IntPtr.Zero, hDC);
             }
+            */
         }
 
         protected static IntPtr CreateRectangleRegion(Rectangle rect, int indent)
         {
+			Console.WriteLine("SR: TODO: DrawHelper/CreateRectangleRegion");
+			return IntPtr.Zero;
+/*			
             Win32.RECT newWinRect = new Win32.RECT();
             newWinRect.left = rect.Left;
             newWinRect.top = rect.Top;
@@ -439,10 +447,14 @@ namespace Crownwood.Magic.Common
 
             // Return the resultant region object
             return newRegion;
+*/            
         }
 
         protected static IntPtr GetHalfToneBrush()
         {
+			Console.WriteLine("SR: TODO: DrawHelper/GetHalfToneBrush");
+			return IntPtr.Zero;
+/*
             if (_halfToneBrush == IntPtr.Zero)
             {	
                 Bitmap bitmap = new Bitmap(8,8,PixelFormat.Format32bppArgb);
@@ -468,6 +480,7 @@ namespace Crownwood.Magic.Common
             }
 
             return _halfToneBrush;
+*/        
         }
     }
 }

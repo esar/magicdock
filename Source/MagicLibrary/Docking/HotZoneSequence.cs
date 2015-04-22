@@ -12,7 +12,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Crownwood.Magic.Win32;
+//using Crownwood.Magic.Win32;
 using Crownwood.Magic.Common;
 
 namespace Crownwood.Magic.Docking

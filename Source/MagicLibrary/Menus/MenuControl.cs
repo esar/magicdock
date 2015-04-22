@@ -20,7 +20,7 @@ using System.ComponentModel;
 using System.Drawing.Imaging;
 using System.Drawing.Drawing2D;
 using Microsoft.Win32;
-using Crownwood.Magic.Win32;
+//using Crownwood.Magic.Win32;
 using Crownwood.Magic.Menus;
 using Crownwood.Magic.Common;
 using Crownwood.Magic.Controls;
@@ -902,7 +902,8 @@ namespace Crownwood.Magic.Menus
             // Change in state changes the way items are drawn
             Invalidate();
         }
-
+		
+		/*
         internal void OnWM_MOUSEDOWN(Win32.POINT screenPos)
         {
             // Convert the mouse position to screen coordinates
@@ -910,6 +911,7 @@ namespace Crownwood.Magic.Menus
 
             OnProcessMouseDown(screenPos.x, screenPos.y);
         }
+        */
 
         protected override void OnMouseDown(MouseEventArgs e)
         {
@@ -965,8 +967,8 @@ namespace Crownwood.Magic.Menus
                         }
 
                         // Is there a submenu to show?
-                        if (dc.Chevron || (dc.MenuCommand.MenuCommands.Count > 0))
-                            User32.PostMessage(this.Handle, WM_OPERATEMENU, 1, 0);
+//                        if (dc.Chevron || (dc.MenuCommand.MenuCommands.Count > 0))
+//                            User32.PostMessage(this.Handle, WM_OPERATEMENU, 1, 0);
                     }
 
                     break;
@@ -998,7 +1000,8 @@ namespace Crownwood.Magic.Menus
 
             base.OnMouseUp(e);
         }
-
+		
+		/*
         internal void OnWM_MOUSEMOVE(Win32.POINT screenPos)
         {
             // Convert the mouse position to screen coordinates
@@ -1006,6 +1009,7 @@ namespace Crownwood.Magic.Menus
 
             OnProcessMouseMove(screenPos.x, screenPos.y);
         }
+        */
 
         protected override void OnMouseMove(MouseEventArgs e)
         {
@@ -1038,7 +1042,7 @@ namespace Crownwood.Magic.Menus
                     tme.dwHoverTime = 0;								
 
                     // Request that a message gets sent when mouse leaves this window
-                    User32.TrackMouseEvent(ref tme);
+//                    User32.TrackMouseEvent(ref tme);
 
                     // Yes, we know the mouse is over window
                     _mouseOver = true;
@@ -1084,8 +1088,8 @@ namespace Crownwood.Magic.Menus
                                     _trackItem = SwitchTrackingItem(_trackItem, i);
 
                                     // Does the newly selected item have a submenu?
-                                    if (dc.Chevron || (dc.MenuCommand.MenuCommands.Count > 0))	
-                                        User32.PostMessage(this.Handle, WM_OPERATEMENU, 1, 0);
+                                    //if (dc.Chevron || (dc.MenuCommand.MenuCommands.Count > 0))	
+                                    //    User32.PostMessage(this.Handle, WM_OPERATEMENU, 1, 0);
                                 }
                                 else
                                 {
@@ -2153,6 +2157,7 @@ namespace Crownwood.Magic.Menus
 
         protected void SimulateGrabFocus()
         {	
+/*			
 			if (!_manualFocus)
 			{
 				_manualFocus = true;
@@ -2205,6 +2210,7 @@ namespace Crownwood.Magic.Menus
 				// We lost the focus
 				_manualFocus = false;
 			}
+*/			
         }
 
         protected void SimulateReturnFocus()
@@ -2264,8 +2270,8 @@ namespace Crownwood.Magic.Menus
 							
                             if (_selected)
                             {
-                                if (dc.Chevron || (dc.MenuCommand.MenuCommands.Count > 0))
-                                    User32.PostMessage(this.Handle, WM_OPERATEMENU, 0, 1);
+                                //if (dc.Chevron || (dc.MenuCommand.MenuCommands.Count > 0))
+                                //    User32.PostMessage(this.Handle, WM_OPERATEMENU, 0, 1);
                             }
 
                             break;
@@ -2304,8 +2310,8 @@ namespace Crownwood.Magic.Menus
 
                             if (_selected)
                             {
-                                if (dc.Chevron || (dc.MenuCommand.MenuCommands.Count > 0))
-                                    User32.PostMessage(this.Handle, WM_OPERATEMENU, 0, 1);
+                                //if (dc.Chevron || (dc.MenuCommand.MenuCommands.Count > 0))
+                                //    User32.PostMessage(this.Handle, WM_OPERATEMENU, 0, 1);
                             }
 
                             break;
@@ -2339,8 +2345,8 @@ namespace Crownwood.Magic.Menus
 
 							// Show the submenu
 
-							if (dc.Chevron || (dc.MenuCommand.MenuCommands.Count > 0))
-								User32.PostMessage(this.Handle, WM_OPERATEMENU, 0, 1);
+							//if (dc.Chevron || (dc.MenuCommand.MenuCommands.Count > 0))
+							//	User32.PostMessage(this.Handle, WM_OPERATEMENU, 0, 1);
 						}
 						else
 						{
@@ -2407,8 +2413,8 @@ namespace Crownwood.Magic.Menus
                             DrawCommand(_trackItem, true);
 
                             // Show the submenu
-	                        if (dc.Chevron || (dc.MenuCommand.MenuCommands.Count > 0))
-		                        User32.PostMessage(this.Handle, WM_OPERATEMENU, 0, 1);
+	                        //if (dc.Chevron || (dc.MenuCommand.MenuCommands.Count > 0))
+		                    //    User32.PostMessage(this.Handle, WM_OPERATEMENU, 0, 1);
                         }
                     }
                 }
@@ -2450,8 +2456,8 @@ namespace Crownwood.Magic.Menus
                             // Is there a submenu to show?
                             if (dc.Chevron || (dc.MenuCommand.MenuCommands.Count >= 0))
 							{
-	                            if (dc.Chevron || (dc.MenuCommand.MenuCommands.Count > 0))
-		                            User32.PostMessage(this.Handle, WM_OPERATEMENU, 0, 1);
+	                            //if (dc.Chevron || (dc.MenuCommand.MenuCommands.Count > 0))
+		                        //    User32.PostMessage(this.Handle, WM_OPERATEMENU, 0, 1);
 
 	                            return true;
 							}
@@ -2531,7 +2537,8 @@ namespace Crownwood.Magic.Menus
                 switch(msg.Msg)
                 {
                     case (int)Win32.Msgs.WM_KEYDOWN:
-                        // Ignore keyboard input if the control is disabled
+/*
+					// Ignore keyboard input if the control is disabled
                         if (this.Enabled)
 						{
                             // Find up/down state of shift and control keys
@@ -2555,6 +2562,7 @@ namespace Crownwood.Magic.Menus
 							// Search for a matching command
 							return GenerateShortcut(sc, _menuCommands);
                         }
+*/                        
                         break;
                     case (int)Win32.Msgs.WM_SYSKEYUP:
                         // Ignore keyboard input if the control is disabled
@@ -2619,7 +2627,8 @@ namespace Crownwood.Magic.Menus
 
             return false;
         }
-
+		
+		/*
 		protected bool ProcessInterceptedMessage(ref Win32.MSG msg)
 		{
 			bool eat = false;
@@ -2802,6 +2811,7 @@ namespace Crownwood.Magic.Menus
 
 			return eat;
 		}
+		*/
 
         protected bool GenerateShortcut(Shortcut sc, MenuCommandCollection mcc)
         {

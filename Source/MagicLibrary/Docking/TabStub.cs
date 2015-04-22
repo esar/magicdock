@@ -15,7 +15,7 @@ using System.Collections;
 using System.Windows.Forms;
 using System.ComponentModel;
 using Microsoft.Win32;
-using Crownwood.Magic.Win32;
+//using Crownwood.Magic.Win32;
 using Crownwood.Magic.Common;
 using Crownwood.Magic.Controls;
 using Crownwood.Magic.Collections;

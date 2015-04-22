@@ -14,7 +14,7 @@ using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
-using Crownwood.Magic.Win32;
+//using Crownwood.Magic.Win32;
 using Crownwood.Magic.Docking;
 using Crownwood.Magic.Collections;
 
@@ -399,7 +399,17 @@ namespace Crownwood.Magic.Docking
 				{
 					// Perform a hit test against our own window to determine 
 					// which area the mouse press is over at the moment.
-					uint result = User32.SendMessage(this.Handle, (int)Win32.Msgs.WM_NCHITTEST, 0, (uint)m.LParam);
+//#if !MONO
+//					uint result = User32.SendMessage(this.Handle, (int)Win32.Msgs.WM_NCHITTEST, 0, (uint)m.LParam);
+//#else
+					Message msg = new Message();
+					msg.HWnd = Handle;
+					msg.LParam = m.LParam;
+					msg.Msg = (int)Win32.Msgs.WM_NCHITTEST;
+					msg.WParam = IntPtr.Zero;
+					base.WndProc(ref msg);
+					uint result = (uint)msg.Result;
+//#endif
                 
 					// Only want to override the behviour of moving the window via the caption box
 					if (result == HITTEST_CAPTION)

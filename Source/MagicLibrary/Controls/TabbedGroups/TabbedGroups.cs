@@ -18,7 +18,7 @@ using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
-using Crownwood.Magic.Win32;
+//using Crownwood.Magic.Win32;
 using Crownwood.Magic.Common;
 using Crownwood.Magic.Controls;
 
@@ -1569,8 +1569,8 @@ namespace Crownwood.Magic.Controls
                         if (this.Enabled)
                         {
                             // Find up/down state of shift and control keys
-                            ushort shiftKey = User32.GetKeyState((int)Win32.VirtualKeys.VK_SHIFT);
-                            ushort controlKey = User32.GetKeyState((int)Win32.VirtualKeys.VK_CONTROL);
+                            ushort shiftKey = 0; //User32.GetKeyState((int)Win32.VirtualKeys.VK_SHIFT);
+                            ushort controlKey = 0; //User32.GetKeyState((int)Win32.VirtualKeys.VK_CONTROL);
 
                             // Basic code we are looking for is the key pressed
                             int code = (int)msg.WParam;

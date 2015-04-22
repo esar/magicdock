@@ -13,7 +13,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using System.ComponentModel;
-using Crownwood.Magic.Win32;
+//using Crownwood.Magic.Win32;
 using Crownwood.Magic.Common;
 using Crownwood.Magic.Controls;
 using Crownwood.Magic.Collections;
@@ -1349,7 +1349,9 @@ namespace Crownwood.Magic.Docking
                     // Have to use Win32 API call to alter the Panel size and position at the same time, no 
                     // Control method/property is available to do both at the same time. Otherwise you can see
                     // the Panel being moved in two steps which looks naff!
-                    User32.MoveWindow(_currentPanel.Handle, rect.Left, rect.Top, rect.Width, rect.Height, true);
+					//User32.MoveWindow(_currentPanel.Handle, rect.Left, rect.Top, rect.Width, rect.Height, true);
+					_currentPanel.Location = new Point(rect.Left, rect.Top);
+					_currentPanel.Size = new Size(rect.Width, rect.Height);
                     
                     // Stop timer when all required steps performed		    
                     if (lastStep)
@@ -1412,7 +1414,9 @@ namespace Crownwood.Magic.Docking
                     // Have to use Win32 API call to alter the Panel size and position at the same time, no 
                     // Control method/property is available to do both at the same time. Otherwise you can see
                     // the Panel being moved in two steps which looks naff!
-                    User32.MoveWindow(_currentPanel.Handle, rect.Left, rect.Top, rect.Width, rect.Height, true);
+					//User32.MoveWindow(_currentPanel.Handle, rect.Left, rect.Top, rect.Width, rect.Height, true);
+					_currentPanel.Location = new Point(rect.Left, rect.Top);
+					_currentPanel.Size = new Size(rect.Width, rect.Height);
 
                     // Stop timer when all required steps performed		    
                     if (lastStep)
@@ -1472,7 +1476,7 @@ namespace Crownwood.Magic.Docking
             if (_currentWCT != null)
             {
                 // Remember current focus
-                IntPtr hWnd = User32.GetFocus();
+//                IntPtr hWnd = User32.GetFocus();
 
                 // Do not slide a window in the process of being removed
                 StopDismissTimer();
@@ -1485,7 +1489,7 @@ namespace Crownwood.Magic.Docking
                 _currentWCT = null;
 
                 // Replace the focus
-                User32.SetFocus(hWnd);
+//                User32.SetFocus(hWnd);
             }	
             
             // Prevent drawing artifacts by invalidating window
@@ -1505,7 +1509,7 @@ namespace Crownwood.Magic.Docking
             if (!_killing && (_currentWCT != null) && !_currentWCT.ContainsFocus)
             {
                 // Remember current focus
-                IntPtr hWnd = User32.GetFocus();
+//                IntPtr hWnd = User32.GetFocus();
 			
                 // Do not slide a window in the process of being removed
                 StopDismissTimer();
@@ -1518,7 +1522,7 @@ namespace Crownwood.Magic.Docking
                 _currentWCT = null;
 
                 // Replace the focus
-                User32.SetFocus(hWnd);
+//                User32.SetFocus(hWnd);
             }	
         }
  
@@ -1582,7 +1586,8 @@ namespace Crownwood.Magic.Docking
                         screenPos.y = (int)(((uint)msg.LParam & 0xFFFF0000U) >> 16);
 
                         // Convert the mouse position to screen coordinates
-                        User32.ClientToScreen(msg.HWnd, ref screenPos);
+                        //User32.ClientToScreen(msg.HWnd, ref screenPos);
+                        PointToScreen(new Point(screenPos.x, screenPos.y));
 
                         // Get the screen rectangle for the showing panel and this object
                         Rectangle panelRect = _currentPanel.RectangleToScreen(_currentPanel.ClientRectangle);

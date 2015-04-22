@@ -1,601 +1,194 @@
-<VisualStudioProject>
-    <CSHARP
-        ProjectType = "Local"
-        ProductVersion = "7.0.9466"
-        SchemaVersion = "1.0"
-        ProjectGuid = "{92F94EA0-9910-4895-B8A1-FED1543A9DA1}"
-    >
-        <Build>
-            <Settings
-                ApplicationIcon = ""
-                AssemblyKeyContainerName = ""
-                AssemblyName = "MagicLocalLibrary"
-                AssemblyOriginatorKeyFile = ""
-                DefaultClientScript = "JScript"
-                DefaultHTMLPageLayout = "Grid"
-                DefaultTargetSchema = "IE50"
-                DelaySign = "false"
-                OutputType = "Library"
-                RootNamespace = "Crownwood.Magic"
-                StartupObject = ""
-            >
-                <Config
-                    Name = "Debug"
-                    AllowUnsafeBlocks = "true"
-                    BaseAddress = "285212672"
-                    CheckForOverflowUnderflow = "false"
-                    ConfigurationOverrideFile = ""
-                    DefineConstants = "DEBUG;TRACE"
-                    DocumentationFile = ""
-                    DebugSymbols = "true"
-                    FileAlignment = "4096"
-                    IncrementalBuild = "true"
-                    Optimize = "false"
-                    OutputPath = "..\..\Bin\"
-                    RegisterForComInterop = "false"
-                    RemoveIntegerChecks = "false"
-                    TreatWarningsAsErrors = "true"
-                    WarningLevel = "4"
-                />
-                <Config
-                    Name = "Release"
-                    AllowUnsafeBlocks = "true"
-                    BaseAddress = "285212672"
-                    CheckForOverflowUnderflow = "false"
-                    ConfigurationOverrideFile = ""
-                    DefineConstants = "TRACE"
-                    DocumentationFile = ""
-                    DebugSymbols = "false"
-                    FileAlignment = "4096"
-                    IncrementalBuild = "true"
-                    Optimize = "true"
-                    OutputPath = "..\..\Bin\"
-                    RegisterForComInterop = "false"
-                    RemoveIntegerChecks = "false"
-                    TreatWarningsAsErrors = "true"
-                    WarningLevel = "4"
-                />
-                <Config
-                    Name = "StrongMagic"
-                    AllowUnsafeBlocks = "true"
-                    BaseAddress = "285212672"
-                    CheckForOverflowUnderflow = "false"
-                    ConfigurationOverrideFile = ""
-                    DefineConstants = "TRACE"
-                    DocumentationFile = ""
-                    DebugSymbols = "false"
-                    FileAlignment = "4096"
-                    IncrementalBuild = "true"
-                    Optimize = "true"
-                    OutputPath = "..\..\Bin\"
-                    RegisterForComInterop = "false"
-                    RemoveIntegerChecks = "false"
-                    TreatWarningsAsErrors = "true"
-                    WarningLevel = "4"
-                />
-            </Settings>
-            <References>
-                <Reference
-                    Name = "System"
-                    AssemblyName = "System"
-                />
-                <Reference
-                    Name = "System.Data"
-                    AssemblyName = "System.Data"
-                />
-                <Reference
-                    Name = "System.Drawing"
-                    AssemblyName = "System.Drawing"
-                />
-                <Reference
-                    Name = "System.Windows.Forms"
-                    AssemblyName = "System.Windows.Forms"
-                />
-                <Reference
-                    Name = "System.XML"
-                    AssemblyName = "System.Xml"
-                />
-                <Reference
-                    Name = "System.Design"
-                    AssemblyName = "System.Design"
-                    HintPath = "..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Design.dll"
-                />
-            </References>
-        </Build>
-        <Files>
-            <Include>
-                <File
-                    RelPath = "AssemblyInfo.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Collections\CollectionWithEvents.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Collections\ContentCollection.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Collections\HotZoneCollection.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Collections\ManagerContentCollection.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Collections\MenuCommandCollection.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Collections\StringCollection.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Collections\TabGroupBaseCollection.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Collections\TabPageCollection.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Collections\TargetCollection.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Collections\WindowCollection.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Collections\WindowDetailCollection.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Collections\WizardPageCollection.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Collections\ZoneCollection.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Common\ColorHelper.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Common\ControlHelper.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Common\ConversionHelper.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Common\DebugHelper.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Common\DrawHelper.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Common\Enums.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Common\ResourceHelper.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\InertButton.bmp"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Controls\TabbedGroups.bmp"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Controls\TabControl.bmp"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Controls\WizardControl.bmp"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Controls\BorderForControl\BorderForControl.cs"
-                    SubType = "UserControl"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\BorderForControl\BorderForControl.resx"
-                    DependentUpon = "BorderForControl.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Controls\InertButton\InertButton.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\InertButton\InertButton.resx"
-                    DependentUpon = "InertButton.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Controls\ResizeBar\ResizeBar.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\ResizeBar\ResizeBar.resx"
-                    DependentUpon = "ResizeBar.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Controls\TabbedGroups\TabbedGroupEventArgs.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\TabbedGroups\TabbedGroups.cs"
-                    SubType = "UserControl"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\TabbedGroups\TabbedGroups.resx"
-                    DependentUpon = "TabbedGroups.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Controls\TabbedGroups\TabGroupBase.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\TabbedGroups\TabGroupLeaf.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\TabbedGroups\TabGroupSequence.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\TabbedGroups\Target.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\TabControl\TabControl.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\TabControl\TabControl.resx"
-                    DependentUpon = "TabControl.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Controls\TabControl\TabControlDesigner.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\TabControl\TabPage.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\TabControl\TabPage.resx"
-                    DependentUpon = "TabPage.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Controls\WizardControl\WizardControl.cs"
-                    SubType = "UserControl"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\WizardControl\WizardControl.resx"
-                    DependentUpon = "WizardControl.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Controls\WizardControl\WizardControlDesigner.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\WizardControl\WizardPage.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Controls\WizardControl\WizardPage.resx"
-                    DependentUpon = "WizardPage.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Docking\AutoHidePanel.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\AutoHidePanel.resx"
-                    DependentUpon = "AutoHidePanel.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Docking\Content.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\Definitions.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\DockingManager.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\FloatinglForm.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\FloatinglForm.resx"
-                    DependentUpon = "FloatinglForm.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Docking\HotZone.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\HotZoneFloating.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\HotZoneNull.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\HotZoneReposition.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\HotZoneSequence.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\HotZoneTabbed.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\Redocker.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\RedockerContent.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\Restore.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\TabStub.cs"
-                    SubType = "UserControl"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\Window.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\Window.resx"
-                    DependentUpon = "Window.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Docking\WindowContent.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\WindowContentTabbed.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\WindowDetail.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\WindowDetail.resx"
-                    DependentUpon = "WindowDetail.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Docking\WindowDetailCaption.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\WindowDetailCaption.resx"
-                    DependentUpon = "WindowDetailCaption.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Docking\Zone.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\Zone.resx"
-                    DependentUpon = "Zone.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Docking\ZoneHelper.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Docking\ZoneSequence.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Forms\WizardDialog.cs"
-                    SubType = "Form"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Forms\WizardDialog.resx"
-                    DependentUpon = "WizardDialog.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Menus\DrawCommand.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Menus\MenuCommand.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Menus\MenuCommand.resx"
-                    DependentUpon = "MenuCommand.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Menus\MenuControl.bmp"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Menus\MenuControl.cs"
-                    SubType = "Component"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Menus\MenuControl.resx"
-                    DependentUpon = "MenuControl.cs"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Menus\MenuControlDesigner.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Menus\PopupMenu.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Resources\ImagesCaptionIDE.bmp"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Resources\ImagesCaptionPlain.bmp"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Resources\ImagesMenuControl.bmp"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Resources\ImagesPopupMenu.bmp"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Resources\ImagesTabbedGroups.bmp"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Resources\ImagesTabControl.bmp"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Resources\LibraryIcon.ico"
-                    BuildAction = "Content"
-                />
-                <File
-                    RelPath = "Resources\TabbedInvalid.cur"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Resources\TabbedValid.cur"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Resources\WizardPicture.bmp"
-                    BuildAction = "EmbeddedResource"
-                />
-                <File
-                    RelPath = "Win32\Enums.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Win32\Gdi32.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Win32\Structs.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-                <File
-                    RelPath = "Win32\User32.cs"
-                    SubType = "Code"
-                    BuildAction = "Compile"
-                />
-            </Include>
-        </Files>
-    </CSHARP>
-</VisualStudioProject>
-
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F284392F-6873-4BE5-99BA-24793532D930}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Crownwood.Magic</RootNamespace>
+    <AssemblyName>MagicLocalLibrary</AssemblyName>
+    <additionalargs>/unsafe</additionalargs>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunWithWarnings>false</RunWithWarnings>
+    <additionalargs>/unsafe</additionalargs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunWithWarnings>false</RunWithWarnings>
+    <additionalargs>/unsafe</additionalargs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'StrongMagic|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunWithWarnings>false</RunWithWarnings>
+    <additionalargs>/unsafe</additionalargs>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Collections\CollectionWithEvents.cs" />
+    <Compile Include="Collections\ContentCollection.cs" />
+    <Compile Include="Collections\HotZoneCollection.cs" />
+    <Compile Include="Collections\ManagerContentCollection.cs" />
+    <Compile Include="Collections\MenuCommandCollection.cs" />
+    <Compile Include="Collections\StringCollection.cs" />
+    <Compile Include="Collections\TabGroupBaseCollection.cs" />
+    <Compile Include="Collections\TabPageCollection.cs" />
+    <Compile Include="Collections\TargetCollection.cs" />
+    <Compile Include="Collections\WindowCollection.cs" />
+    <Compile Include="Collections\WindowDetailCollection.cs" />
+    <Compile Include="Collections\WizardPageCollection.cs" />
+    <Compile Include="Collections\ZoneCollection.cs" />
+    <Compile Include="Common\ColorHelper.cs" />
+    <Compile Include="Common\ControlHelper.cs" />
+    <Compile Include="Common\ConversionHelper.cs" />
+    <Compile Include="Common\DebugHelper.cs" />
+    <Compile Include="Common\DrawHelper.cs" />
+    <Compile Include="Common\Enums.cs" />
+    <Compile Include="Common\ResourceHelper.cs" />
+    <Compile Include="Controls\BorderForControl\BorderForControl.cs" />
+    <Compile Include="Controls\InertButton\InertButton.cs" />
+    <Compile Include="Controls\ResizeBar\ResizeBar.cs" />
+    <Compile Include="Controls\TabbedGroups\TabbedGroupEventArgs.cs" />
+    <Compile Include="Controls\TabbedGroups\TabbedGroups.cs" />
+    <Compile Include="Controls\TabbedGroups\TabGroupBase.cs" />
+    <Compile Include="Controls\TabbedGroups\TabGroupLeaf.cs" />
+    <Compile Include="Controls\TabbedGroups\TabGroupSequence.cs" />
+    <Compile Include="Controls\TabbedGroups\Target.cs" />
+    <Compile Include="Controls\TabControl\TabControl.cs" />
+    <Compile Include="Controls\TabControl\TabControlDesigner.cs" />
+    <Compile Include="Controls\TabControl\TabPage.cs" />
+    <Compile Include="Controls\WizardControl\WizardControl.cs" />
+    <Compile Include="Controls\WizardControl\WizardControlDesigner.cs" />
+    <Compile Include="Controls\WizardControl\WizardPage.cs" />
+    <Compile Include="Docking\AutoHidePanel.cs" />
+    <Compile Include="Docking\Content.cs" />
+    <Compile Include="Docking\Definitions.cs" />
+    <Compile Include="Docking\DockingManager.cs" />
+    <Compile Include="Docking\FloatinglForm.cs" />
+    <Compile Include="Docking\HotZone.cs" />
+    <Compile Include="Docking\HotZoneFloating.cs" />
+    <Compile Include="Docking\HotZoneNull.cs" />
+    <Compile Include="Docking\HotZoneReposition.cs" />
+    <Compile Include="Docking\HotZoneSequence.cs" />
+    <Compile Include="Docking\HotZoneTabbed.cs" />
+    <Compile Include="Docking\Redocker.cs" />
+    <Compile Include="Docking\RedockerContent.cs" />
+    <Compile Include="Docking\Restore.cs" />
+    <Compile Include="Docking\TabStub.cs" />
+    <Compile Include="Docking\Window.cs" />
+    <Compile Include="Docking\WindowContent.cs" />
+    <Compile Include="Docking\WindowContentTabbed.cs" />
+    <Compile Include="Docking\WindowDetail.cs" />
+    <Compile Include="Docking\WindowDetailCaption.cs" />
+    <Compile Include="Docking\Zone.cs" />
+    <Compile Include="Docking\ZoneHelper.cs" />
+    <Compile Include="Docking\ZoneSequence.cs" />
+    <Compile Include="Forms\WizardDialog.cs" />
+    <Compile Include="Menus\DrawCommand.cs" />
+    <Compile Include="Menus\MenuCommand.cs" />
+    <Compile Include="Menus\MenuControl.cs" />
+    <Compile Include="Menus\MenuControlDesigner.cs" />
+    <Compile Include="Menus\PopupMenu.cs" />
+    <Compile Include="Win32\Enums.cs" />
+    <Compile Include="Win32\Structs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\InertButton.bmp" />
+    <EmbeddedResource Include="Controls\TabbedGroups.bmp" />
+    <EmbeddedResource Include="Controls\TabControl.bmp" />
+    <EmbeddedResource Include="Controls\WizardControl.bmp" />
+    <EmbeddedResource Include="Controls\BorderForControl\BorderForControl.resx">
+      <DependentUpon>BorderForControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\InertButton\InertButton.resx">
+      <DependentUpon>InertButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ResizeBar\ResizeBar.resx">
+      <DependentUpon>ResizeBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TabbedGroups\TabbedGroups.resx">
+      <DependentUpon>TabbedGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TabControl\TabControl.resx">
+      <DependentUpon>TabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TabControl\TabPage.resx">
+      <DependentUpon>TabPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WizardControl\WizardControl.resx">
+      <DependentUpon>WizardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WizardControl\WizardPage.resx">
+      <DependentUpon>WizardPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\AutoHidePanel.resx">
+      <DependentUpon>AutoHidePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\FloatinglForm.resx">
+      <DependentUpon>FloatinglForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Window.resx">
+      <DependentUpon>Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\WindowDetail.resx">
+      <DependentUpon>WindowDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\WindowDetailCaption.resx">
+      <DependentUpon>WindowDetailCaption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Zone.resx">
+      <DependentUpon>Zone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WizardDialog.resx">
+      <DependentUpon>WizardDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuCommand.resx">
+      <DependentUpon>MenuCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuControl.bmp" />
+    <EmbeddedResource Include="Menus\MenuControl.resx">
+      <DependentUpon>MenuControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ImagesCaptionIDE.bmp" />
+    <EmbeddedResource Include="Resources\ImagesCaptionPlain.bmp" />
+    <EmbeddedResource Include="Resources\ImagesMenuControl.bmp" />
+    <EmbeddedResource Include="Resources\ImagesPopupMenu.bmp" />
+    <EmbeddedResource Include="Resources\ImagesTabbedGroups.bmp" />
+    <EmbeddedResource Include="Resources\ImagesTabControl.bmp" />
+    <EmbeddedResource Include="Resources\TabbedInvalid.cur" />
+    <EmbeddedResource Include="Resources\TabbedValid.cur" />
+    <EmbeddedResource Include="Resources\WizardPicture.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\LibraryIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Design" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Win32\" />
+  </ItemGroup>
+</Project>
