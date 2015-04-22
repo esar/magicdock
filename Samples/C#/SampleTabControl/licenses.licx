@@ -1,0 +1,9 @@
+System.Windows.Forms.Label, System.Windows.Forms, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.Windows.Forms.Form, System.Windows.Forms, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Crownwood.Magic.Controls.TabPage, MagicLibrary, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null
+Crownwood.Magic.Controls.TabControl, MagicLibrary, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null
+System.Windows.Forms.Button, System.Windows.Forms, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.Windows.Forms.CheckBox, System.Windows.Forms, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.Windows.Forms.RadioButton, System.Windows.Forms, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.Windows.Forms.GroupBox, System.Windows.Forms, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b77a5c561934e089

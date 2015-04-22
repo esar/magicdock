@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SampleDocking", "SampleDocking\SampleDocking.vbproj", "{EC217A22-A332-4D77-BC51-A07A38BEF00C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SampleMenus", "SampleMenus\SampleMenus.vbproj", "{83A48EC3-31E8-4DDF-9B82-1D473B32FD03}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SampleTabControl", "SampleTabControl\SampleTabControl.vbproj", "{782A8EF3-0663-4F67-BC5D-09BF1EA7BD5C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SampleWizard", "SampleWizard\SampleWizard.vbproj", "{874F0401-D827-4FBF-910B-019FC150D8DC}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SampleTabbedGroups", "SampleTabbedGroups\SampleTabbedGroups.vbproj", "{89AA3C5D-8E17-4CB4-BBDC-A594E3346A42}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EC217A22-A332-4D77-BC51-A07A38BEF00C}.Debug.ActiveCfg = Debug|.NET
+		{EC217A22-A332-4D77-BC51-A07A38BEF00C}.Debug.Build.0 = Debug|.NET
+		{EC217A22-A332-4D77-BC51-A07A38BEF00C}.Release.ActiveCfg = Release|.NET
+		{EC217A22-A332-4D77-BC51-A07A38BEF00C}.Release.Build.0 = Release|.NET
+		{83A48EC3-31E8-4DDF-9B82-1D473B32FD03}.Debug.ActiveCfg = Debug|.NET
+		{83A48EC3-31E8-4DDF-9B82-1D473B32FD03}.Debug.Build.0 = Debug|.NET
+		{83A48EC3-31E8-4DDF-9B82-1D473B32FD03}.Release.ActiveCfg = Release|.NET
+		{83A48EC3-31E8-4DDF-9B82-1D473B32FD03}.Release.Build.0 = Release|.NET
+		{782A8EF3-0663-4F67-BC5D-09BF1EA7BD5C}.Debug.ActiveCfg = Debug|.NET
+		{782A8EF3-0663-4F67-BC5D-09BF1EA7BD5C}.Debug.Build.0 = Debug|.NET
+		{782A8EF3-0663-4F67-BC5D-09BF1EA7BD5C}.Release.ActiveCfg = Release|.NET
+		{782A8EF3-0663-4F67-BC5D-09BF1EA7BD5C}.Release.Build.0 = Release|.NET
+		{874F0401-D827-4FBF-910B-019FC150D8DC}.Debug.ActiveCfg = Debug|.NET
+		{874F0401-D827-4FBF-910B-019FC150D8DC}.Debug.Build.0 = Debug|.NET
+		{874F0401-D827-4FBF-910B-019FC150D8DC}.Release.ActiveCfg = Release|.NET
+		{874F0401-D827-4FBF-910B-019FC150D8DC}.Release.Build.0 = Release|.NET
+		{89AA3C5D-8E17-4CB4-BBDC-A594E3346A42}.Debug.ActiveCfg = Debug|.NET
+		{89AA3C5D-8E17-4CB4-BBDC-A594E3346A42}.Debug.Build.0 = Debug|.NET
+		{89AA3C5D-8E17-4CB4-BBDC-A594E3346A42}.Release.ActiveCfg = Release|.NET
+		{89AA3C5D-8E17-4CB4-BBDC-A594E3346A42}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,424 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+  <head>
+    <meta name="author" content="Crownwood Consulting Ltd." />
+    <meta name="description" content="Magic, The User Inteface Library for .NET." />
+    <meta name="keywords" content=".NET Framework,DotNet,.NET,magic,gui,docking,dockable,toolbars,menus,components,controls,c,csharp,vb,visual basic,WinForms,Windows Forms" />
+    <meta name="robots" content="all" />
+    <title>Magic - The User Interface Library for .NET - ReadMe</title>
+    <link href="articles/images3/master.css" type="text/css" rel="stylesheet" />
+    <script language="JavaScript" type="text/javascript">
+      <!--Dummy comment to hide code from non-JavaScript browsers.
+
+		if (document.images) 
+		{
+			readme_off = new Image(); readme_off.src = "articles/images3/readme.gif"
+			readme_over = new Image(); readme_over.src = "articles/images3/readme_over.gif"
+			articles_off = new Image(); articles_off.src = "articles/images3/articles.gif"
+			articles_over = new Image(); articles_over.src = "articles/images3/articles_over.gif"
+			bespoke_off = new Image(); bespoke_off.src = "articles/images3/bespoke.gif"
+			bespoke_over = new Image(); bespoke_over.src = "articles/images3/bespoke_over.gif"
+			contact_off = new Image(); contact_off.src = "articles/images3/contact.gif"
+			contact_over = new Image(); contact_over.src = "articles/images3/contact_over.gif"
+		}
+
+		function turn_off(ImageName) {
+			if (document.images != null) {
+				document[ImageName].src = eval(ImageName + "_off.src");
+			}
+		}
+
+		function turn_over(ImageName) {
+			if (document.images != null) {
+				document[ImageName].src = eval(ImageName + "_over.src");
+			}
+		}
+
+		// End of dummy comment-->
+    </script>
+  </head>
+  <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" class="lightBG">
+    <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" class="lightBG">
+      <tr>
+        <td height="100%" class="lightBG">
+          <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+        </td>
+        <td height="100%" width="750">
+          <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td height="23" class="lightBG">
+                <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+              </td>
+            </tr>
+            <tr>
+              <td height="99" class="lightBG">
+                <table width="100%" height="99" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td height="99" class="pageHeader" valign="bottom">ReadMe</td>
+                    <td height="143" width="362" class="lightBG">
+                      <img src="articles/images3/logo_full.jpg" alt="Magic Logo" height="143" width="362" border="0" />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td width="100%" height="20" class="lightMenu">
+                <table width="100%" height="20" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td class="lightMenu">
+                      <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                    </td>
+                    <td class="lightMenu" height="20" width="52">
+                      <a href="readme.html" onmouseout="turn_off('readme')" onmouseover="turn_over('readme')">
+                        <img name="readme" src="articles/images3/readme.gif" border="0" width="49" height="20" />
+                      </a>
+                    </td>
+                    <td class="lightMenu" height="20" width="50">
+                      <a href="articles/articles.html" onmouseout="turn_off('articles')" onmouseover="turn_over('articles')">
+                        <img name="articles" src="articles/images3/articles.gif" border="0" width="47" height="20" />
+                      </a>
+                    </td>
+                    <td class="lightMenu" height="20" width="57">
+                      <a href="articles/bespoke.html" onmouseout="turn_off('bespoke')" onmouseover="turn_over('bespoke')">
+                        <img name="bespoke" src="articles/images3/bespoke.gif" border="0" width="54" height="20" />
+                      </a>
+                    </td>
+                    <td class="lightMenu" height="20" width="51">
+                      <a href="articles/contact.html" onmouseout="turn_off('contact')" onmouseover="turn_over('contact')">
+                        <img name="contact" src="articles/images3/contact.gif" border="0" width="48" height="20" />
+                      </a>
+                    </td>
+                    <td class="lightMenu" width="3">
+                      <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td height="23" class="pageBG">
+                <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+              </td>
+            </tr>
+            <tr>
+              <td height="100">
+                <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td height="100%" width="125" class="pageBG">
+                      <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td width="10">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                          <td>
+                            <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td height="15" width="18" valign="bottom">
+                                  <img src="articles/images3/rightarrow.gif" height="15" width="18" border="0" />
+                                </td>
+                                <td height="15">
+                                  <a class="sectionHeader" href="#version">version 1.7.4</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" width="18" valign="bottom">
+                                  <img src="articles/images3/rightarrow.gif" height="15" width="18" border="0" />
+                                </td>
+                                <td height="15">
+                                  <a class="sectionHeader" href="#bugfix">bug fixes</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" width="18" valign="bottom">
+                                  <img src="articles/images3/rightarrow.gif" height="15" width="18" border="0" />
+                                </td>
+                                <td height="15">
+                                  <a class="sectionHeader" href="#build">building</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" width="18" valign="bottom">
+                                  <img src="articles/images3/rightarrow.gif" height="15" width="18" border="0" />
+                                </td>
+                                <td height="15">
+                                  <a class="sectionHeader" href="#license">license</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td width="10">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td height="100%" width="625">
+                      <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr class="documentHeader">
+                          <td height="36" width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                          <td height="36">
+                            <a name="version">Version 1.7.4</a>
+                          </td>
+                          <td height="36" width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                        </tr>
+                        <tr class="documentMain">
+                          <td width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                          <td>
+                            <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td height="5">
+                                  <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" class="documentText">
+                                  <content xmlns="">
+        This is a maintenance release containing several fixes to issues found in 1.7.3.<p /></content>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="5">
+                                  <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="15" class="pageBG" colspan="3">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                        </tr>
+                        <tr class="documentHeader">
+                          <td height="36" width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                          <td height="36">
+                            <a name="bugfix">Bug fixes</a>
+                          </td>
+                          <td height="36" width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                        </tr>
+                        <tr class="documentMain">
+                          <td width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                          <td>
+                            <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td height="5">
+                                  <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" class="documentText">
+                                  <content xmlns="">
+                                    <h2>TabbedGroups</h2>
+	            Moving a page to another leaf could cause a crash to occur and has been fixed.<p />
+
+	            Moving a page to another leaf could cause the pages to disappear and has been fixed.<p />
+
+	            AtLeastOneLeaf set to <i>false</i> in <i>InitializeComponent</i> method would not be honoured 
+	            and a leaf would be created and shown when the form is shown. This has been corrected.<p />
+
+	            ActiveLeaf is no longer persisted into <i>InitializeComponent</i> as it makes no sense to do so.<p /><h2>TabControl</h2>
+	            New property <i>DragOverSelect</i> added so that when dragging over the tab control it will cause 
+	            a change in tab page after a short delay when hovering over a tab page header. This can be turned off 
+	            if not required by setting the this property to <i>false</i>.<p />
+	
+	            New method <i>TabPageFromPoint</i> added that takes a client based mouse position and returns the tab 
+	            page from that position. This matches against the tab page headers to find a match. Returns
+	            <i>null</i> if no match can be found.<p /><h2>Docking</h2>
+	            Saving a configuration would often crash and especially when any of the content are in 
+ 	            the auto hidden state. This has been corrected and should never crash.<p />
+	
+	            Changes to the content title or image will now be reflected immediately in the auto hidden
+	            tab stubs that are visible at the edge of the docking area. Previously the text or images 
+	            were not updated until the content was un-autohidden.<p /></content>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="5">
+                                  <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="15" class="pageBG" colspan="3">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                        </tr>
+                        <tr class="documentHeader">
+                          <td height="36" width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                          <td height="36">
+                            <a name="build">Build instructions</a>
+                          </td>
+                          <td height="36" width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                        </tr>
+                        <tr class="documentMain">
+                          <td width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                          <td>
+                            <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td height="5">
+                                  <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" class="documentText">
+                                  <content xmlns="">
+                                    <h2>Building the samples</h2>
+            Each sample has been written in <i>C#</i> and <i>VB.NET</i>, so you should navigate to the appropriate language 
+            version contained below the <i>Magic Library 1.7.4\Samples</i> directory. Double click the solution file
+            found and you will be presented with the list of available samples. Righ click the sample application of interest and 
+            select the <i>"Set as StartUp Project"</i> option. Now select the <i>"Debug \ Start"</i> menu option and the 
+            projects will be automatically compiled and the selected sample started.<p /><h2>Building the Magic source code</h2>
+		    Navigate to the <i>Magic Library 1.7.4\Source</i> directory and you will find a Visual Studio .NET solution 
+		    called <i>MagicLibrary</i>. Double click this solution and you will be presented with a project that includes all
+		    the source code for building an unsigned version of the Magic Library. The output will be placed by default in the
+		    <i>Magic Library 1.7.4\Bin</i> directory and given the name <i>MagicLocalLibrary.dll</i> to distinguish it from the
+		    official signed version that is in the same location and called <i>MagicLibrary.dll</i>.<p /><h2>Using Magic in your own applications</h2>
+            Either create a new project or load the existing project of interest and right click the <i>References</i> folder.
+            The will present a dialog box with the <i>.NET</i> tab already selected. Navigate down the list of assemblies in 
+            this tab until you find the <i>Magic</i> entry which should then be selected. Your project now has a reference to 
+            the official signed build of <i>Magic</i>. When you decide to distribute your project you will need to also distribute
+            the signed assembly which is contained in the <i>Magic Library 1.7.4\Bin</i> directory and called <i>MagicLibrary.dll</i>.
+            It is recommended that you add the signed version into the GAC during your own installation process.
+		    
+		</content>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="5">
+                                  <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="15" class="pageBG" colspan="3">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                        </tr>
+                        <tr class="documentHeader">
+                          <td height="36" width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                          <td height="36">
+                            <a name="license">License terms</a>
+                          </td>
+                          <td height="36" width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                        </tr>
+                        <tr class="documentMain">
+                          <td width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                          <td>
+                            <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td height="5">
+                                  <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td valign="top" class="documentText">
+                                  <content xmlns="">
+			There is no license fee or royalty fee to be paid at any time for using the 
+			Magic Library. You are however requested to acknowledge the use of the library
+			and provide a link to our home page <i>www.dotnetmagic.com</i> from the 
+			<i>About</i> box of your application.<p />
+			You may include the source code, modified source code, signed assembly or modified 
+			built assembly within your own projects for either personal or commercial use but excluding 
+			the restrictions outlined below.<p />
+			The following restrictions apply to all parts of the library, including all source code, assemblies,
+			samples and documentation...<p /><ul><li>The above items cannot be sold as is, either individually or together.</li><li>The above items cannot be modified and then sold as a library component, either 
+					individually or together.</li></ul>
+			In other words, if you are using the library to enhance your project then you 
+			are fine. If you are trying to gain commercically from the library itself rather 
+			than using it to enhance your own work then you are prohibited from its use.<p />
+			If in any doubt they please contact us at <a href="mailto:license@dotnetmagic.com">
+			license@dotnetmagic.com</a> for a quick determination.<p /></content>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="5">
+                                  <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td width="7">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="15" class="pageBG" colspan="3">
+                            <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td height="23" class="pageBG">
+                <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+              </td>
+            </tr>
+            <tr>
+              <td class="pageBG">
+                <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+              </td>
+            </tr>
+            <tr>
+              <td height="25" align="center" valign="bottom" class="copyright">Copyright 2003 Crownwood Consulting Ltd. All Rights Reserved</td>
+            </tr>
+            <tr>
+              <td height="15" class="lightBG">
+                <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td height="100%" class="lightBG">
+          <img src="articles/images3/spacer.gif" height="1" width="1" border="0" />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
