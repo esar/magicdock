@@ -105,6 +105,7 @@ namespace Crownwood.Magic.Controls
         protected TabGroupLeaf _activeLeaf;
         protected TabGroupSequence _root;
         protected VisualStyle _style;
+        protected Controls.TabPage _activeTabPage;
 	
 	    // Delegates for events
 	    public delegate void TabControlCreatedHandler(TabbedGroups tg, Controls.TabControl tc);
@@ -115,6 +116,7 @@ namespace Crownwood.Magic.Controls
         public delegate void PageSavingHandler(TabbedGroups tg, TGPageSavingEventArgs e);
         public delegate void PageLoadingHandler(TabbedGroups tg, TGPageLoadingEventArgs e);
         public delegate void ExternalDropHandler(TabbedGroups tg, TabGroupLeaf tgl, Controls.TabControl tc, DragProvider dp);
+        public delegate void PageChangeHandler(TabbedGroups tg, Controls.TabPage tp);
 	
 	    // Instance events
 	    public event TabControlCreatedHandler TabControlCreated;
@@ -128,6 +130,7 @@ namespace Crownwood.Magic.Controls
         public event EventHandler ActiveLeafChanged;
         public event EventHandler DirtyChanged;
         public event ExternalDropHandler ExternalDrop;
+        public event PageChangeHandler PageChanged;
 	
         public TabbedGroups()
         {
@@ -787,6 +790,8 @@ namespace Crownwood.Magic.Controls
                         Notify(TabGroupBase.NotifyCode.DisplayTabMode);
                     }
                         
+                    CheckForActivePageChange();
+
                     OnActiveLeafChanged(EventArgs.Empty);
                 }
             }
@@ -848,6 +853,11 @@ namespace Crownwood.Magic.Controls
         public void ResetAtLeastOneLeaf()
         {
             AtLeastOneLeaf = true;
+        }
+
+        public Controls.TabPage ActiveTabPage
+        {
+            get { return _activeTabPage; }
         }
 
         [Category("TabbedGroups")]
@@ -998,11 +1008,36 @@ namespace Crownwood.Magic.Controls
                     break;
             }
             
+            tc.SelectionChanged += new EventHandler(OnSelectedTabPageChanged);
+
             // Has anyone registered for the event?
             if (TabControlCreated != null)
                 TabControlCreated(this, tc);
         }
-        
+
+        private void OnSelectedTabPageChanged(Object sender, EventArgs e)
+        {
+            CheckForActivePageChange();
+        }
+
+        void CheckForActivePageChange()
+        {
+            Controls.TabPage tp = null;
+
+            if(ActiveLeaf != null)
+            {
+                Controls.TabControl tc = ActiveLeaf.GroupControl as Controls.TabControl;
+                if(tc.SelectedIndex != -1)
+                    tp = tc.TabPages[tc.SelectedIndex];
+            }
+
+            if(_activeTabPage != tp)
+            {
+                _activeTabPage = tp;
+                OnPageChanged(tp);
+            }
+        }
+
         public virtual void OnPageCloseRequested(TGCloseRequestEventArgs e)
         {
             // Has anyone registered for the event?
@@ -1072,6 +1107,12 @@ namespace Crownwood.Magic.Controls
             // Has anyone registered for the event?
             if (ExternalDrop != null)
                 ExternalDrop(this, tgl, tc, dp);
+        }
+
+        public virtual void OnPageChanged(Controls.TabPage tp)
+        {
+            if(PageChanged != null)
+                PageChanged(this, tp);
         }
 
         public void BeginInit()
