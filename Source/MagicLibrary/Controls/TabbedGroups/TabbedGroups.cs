@@ -761,11 +761,14 @@ namespace Crownwood.Magic.Controls
                     // Remove selection highlight from old leaf
                     if (_activeLeaf != null)
                     {
-                        // Get access to the contained tab control
-                        TabControl tc = _activeLeaf.GroupControl as Controls.TabControl;
+                        if (_activeLeaf.GroupControl != null)
+                        {
+                            // Get access to the contained tab control
+                            TabControl tc = _activeLeaf.GroupControl as Controls.TabControl;
                         
-                        // Remove bold text for the selected page
-                        tc.BoldSelectedPage = false;
+                            // Remove bold text for the selected page
+                            tc.BoldSelectedPage = false;
+                        }
                         
                         _activeLeaf = null;
                     }
